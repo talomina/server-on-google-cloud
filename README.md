@@ -1,31 +1,32 @@
 # server-on-google-cloud
 
-## Interactive quickstart (GKE)
+## Interactive quickstart (Compute Engine)
 
-The following button opens up an interactive tutorial showing how to deploy Bank of Anthos in GKE:
+Terraform samples intended for inclusion in [cloud.google.com](https://cloud.google.com/).
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://ssh.cloud.google.com/cloudshell/editor?show=ide&cloudshell)
+Typically, the samples are imported on tabs in how-to guides. For example, see
+[Creating a SQL Server instance](https://cloud.google.com/compute/docs/instances/sql-server/creating-sql-server-instances#start_sql_instance).
 
-## Quickstart (GKE)
+## Setup
 
-1. Ensure you have the following requirements:
-   - [Google Cloud project](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project).
-   - Shell environment with `gcloud`, `git`, and `kubectl`.
+To run Terraform samples, the recommended approach is to use
+[Cloud Shell](https://cloud.google.com/shell/docs/using-cloud-shell).
 
-2. Clone the repository.
+Cloud Shell is a Compute Engine virtual machine. The service credentials
+associated with this virtual machine are automatic, so there is no need to
+set up or download a service account key.
 
-   ```sh
-   git clone https://github.com/talomina/server-on-google-cloud
-   cd server-on-google-cloud/
-   ```
+Terraform is integrated with Cloud Shell, and Cloud Shell automatically
+authenticates Terraform, letting you get started with less setup.
 
-3. Set the Google Cloud project and region and ensure the Google Kubernetes Engine API is enabled.
+1. **Activate Cloud Shell** at the top of the
+   [Google Cloud Console](https://console.cloud.google.com/).
 
-   ```sh
-   export PROJECT_ID=<PROJECT_ID>
-   export REGION=us-central1
-   gcloud services enable container.googleapis.com \
-     --project=${PROJECT_ID}
-   ```
+1. Clone this repository:
 
-   Substitute `<PROJECT_ID>` with the ID of your Google Cloud project.
+   git clone https://github.com/talomina/server-on-google-cloud.git
+
+## How to run a sample
+
+See [Work with a Terraform configuration](https://cloud.google.com/docs/terraform/basic-commands).
+
