@@ -24,7 +24,9 @@ authenticates Terraform, letting you get started with less setup.
 
 1. Clone this repository:
 
+   ```
    git clone https://github.com/talomina/server-on-google-cloud.git
+   ```
 
 ## How to run a sample
 
