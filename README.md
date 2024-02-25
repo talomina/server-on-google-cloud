@@ -4,9 +4,6 @@
 
 Terraform samples intended for inclusion in [cloud.google.com](https://cloud.google.com/).
 
-Typically, the samples are imported on tabs in how-to guides. For example, see
-[Creating a SQL Server instance](https://cloud.google.com/compute/docs/instances/sql-server/creating-sql-server-instances#start_sql_instance).
-
 ## Setup
 
 To run Terraform samples, the recommended approach is to use
